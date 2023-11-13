@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-shadcn-ui",
+  "name": "turborepo-boilerplate",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,13 +7,15 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "ui:add": "pnpm --filter ui ui:add",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist && rm -rf apps/*/node_modules && rm -rf apps/*/dist && rm -rf pnpm-lock.yaml"
   },
   "devDependencies": {
     "@turbo/gen": "1.10.16",
     "eslint": "8.53.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "3.0.3",
+    "prettier-config-custom": "workspace:*",
     "turbo": "1.10.16"
   },
   "packageManager": "pnpm@8.10.2"

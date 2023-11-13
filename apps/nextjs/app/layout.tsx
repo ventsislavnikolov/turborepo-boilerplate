@@ -1,4 +1,5 @@
-import '@ui/styles/globals.css'
+/* eslint-disable no-undef */
+import 'tailwind-config-custom/styles/globals.css'
 
 export default function RootLayout({
     children,
