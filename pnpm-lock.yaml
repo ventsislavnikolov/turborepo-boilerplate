@@ -137,18 +137,15 @@ importers:
 
   packages/ui:
     dependencies:
-      '@radix-ui/react-slot':
-        specifier: 1.0.2
-        version: 1.0.2(@types/react@18.2.37)(react@18.2.0)
       class-variance-authority:
         specifier: 0.7.0
         version: 0.7.0
       clsx:
         specifier: 2.0.0
         version: 2.0.0
-      lucide-react:
-        specifier: 0.292.0
-        version: 0.292.0(react@18.2.0)
+      next:
+        specifier: 14.0.2
+        version: 14.0.2(react-dom@18.2.0)(react@18.2.0)
       tailwind-merge:
         specifier: 2.0.0
         version: 2.0.0
@@ -1850,35 +1847,6 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@radix-ui/react-compose-refs@1.0.1(@types/react@18.2.37)(react@18.2.0):
-    resolution: {integrity: sha1-fthotmlGqmAw5YCx/8o4bdTSGYk=}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@types/react': 18.2.37
-      react: 18.2.0
-    dev: false
-
-  /@radix-ui/react-slot@1.0.2(@types/react@18.2.37)(react@18.2.0):
-    resolution: {integrity: sha1-qf9EI+reZ/UB/7MuwiBkvJ0wmas=}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.37)(react@18.2.0)
-      '@types/react': 18.2.37
-      react: 18.2.0
-    dev: false
-
   /@rushstack/eslint-patch@1.5.1:
     resolution: {integrity: sha1-XxtRjsX6VEN8C3xKghVGxk/taSI=}
     dev: false
@@ -1994,6 +1962,7 @@ packages:
 
   /@types/prop-types@15.7.10:
     resolution: {integrity: sha1-iSr8kzLE1ipep+iX/kjtIIW7sIo=}
+    dev: true
 
   /@types/react-dom@18.2.15:
     resolution: {integrity: sha1-khr2f57gI6w36oSxvAzEC4mOpSI=}
@@ -2007,9 +1976,11 @@ packages:
       '@types/prop-types': 15.7.10
       '@types/scheduler': 0.16.6
       csstype: 3.1.2
+    dev: true
 
   /@types/scheduler@0.16.6:
     resolution: {integrity: sha1-6ybbZ4DFE95ZvuC4ae8omtMGhxE=}
+    dev: true
 
   /@types/semver@7.5.5:
     resolution: {integrity: sha1-3u1atwGXVsnJDqhhORBrA0YiPzU=}
@@ -2941,6 +2912,7 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha1-HUv51XLxHBQDHwQ24cELwfVx9Qs=}
+    dev: true
 
   /damerau-levenshtein@1.0.8:
     resolution: {integrity: sha1-tD0obMvTa8Wy9+1ByvLQq6H4puc=}
@@ -4803,14 +4775,6 @@ packages:
     resolution: {integrity: sha1-95OJbg/Q6VSlnf3YLwdzgI32qok=}
     engines: {node: '>=12'}
     dev: true
-
-  /lucide-react@0.292.0(react@18.2.0):
-    resolution: {integrity: sha1-yKBrLM2KNIqIZp3vPAKRwDXeKIQ=}
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
-    dev: false
 
   /make-error@1.3.6:
     resolution: {integrity: sha1-LrLjfqm2fEiR9oShOUeZr0hM96I=}
