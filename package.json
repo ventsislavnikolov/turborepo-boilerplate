@@ -62,6 +62,6 @@
     "prettier-plugin-tailwindcss": "0.5.9",
     "semantic-release": "22.0.12",
     "semantic-release-ado": "1.4.0",
-    "turbo": "1.10.16"
+    "turbo": "1.11.2"
   }
 }
