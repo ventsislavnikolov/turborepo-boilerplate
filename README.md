@@ -42,7 +42,6 @@ This Turborepo includes the following packages/apps:
 
 - `nextjs`: another [Next.js](https://nextjs.org/) app
 - `ui`: a stub React component library shared by both `nextjs` and `expo` applications (🚀 powered by **shadcn/ui**)
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `typescript-config-custom`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).

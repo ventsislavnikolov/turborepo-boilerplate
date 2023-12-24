@@ -1,14 +1,13 @@
-/* eslint-disable no-undef */
 import 'tailwind-config-custom/styles/globals.css'
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode
 }) {
-    return (
+  return (
         <html lang="en">
             <body>{children}</body>
         </html>
-    )
+  )
 }

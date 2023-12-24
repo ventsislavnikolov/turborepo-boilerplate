@@ -10,22 +10,10 @@
       "cache": false,
       "persistent": true
     },
-    "format": {
-      "outputs": ["node_modules/.cache/.prettiercache"],
-      "outputMode": "new-only"
-    },
     "lint": {
-      "dependsOn": ["^topo"],
-      "outputs": ["node_modules/.cache/.eslintcache"]
-    },
-    "typecheck": {
-      "dependsOn": ["^topo"],
-      "outputs": ["node_modules/.cache/tsbuildinfo.json"]
+      "dependsOn": ["^lint"]
     },
     "clean": {
-      "cache": false
-    },
-    "//#clean": {
       "cache": false
     }
   }

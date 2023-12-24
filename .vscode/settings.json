@@ -1,0 +1,26 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.enable": false,
+  "eslint.experimental.useFlatConfig": true,
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ],
+  "css.format.enable": false,
+  "css.format.preserveNewLines": true
+}
