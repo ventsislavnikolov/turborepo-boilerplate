@@ -1,46 +1,41 @@
-import { antfu, combine } from '@antfu/eslint-config';
-import { FlatCompat } from '@eslint/eslintrc';
+import { vneslint } from '@ventsislavnikolov/eslint-config';
 
-const compat = new FlatCompat()
-
-const customConfig = [
-  ...compat.config({
-    extends: ['plugin:tailwindcss/recommended'],
-  }),
-]
-
-export default combine(
-  antfu({
+export default vneslint(
+  [
+    {
+      files: ['*.config.js', '**/packages/**/*.config.js', '**/packages/**/index.js', '**/apps/**/*.config.js'],
+      rules: {
+        'n/no-extraneous-import': 'off',
+        'n/no-unpublished-import': 'off',
+        'import/no-anonymous-default-export': 'off',
+        'import/no-default-export': 'off',
+        'no-undef': 'off',
+        'sort-keys/sort-keys-fix': 'off',
+      },
+    },
+    {
+      files: ['**/packages/**/*.ts', '**/apps/**/*.ts', '**/packages/**/*.tsx', '**/apps/**/*.tsx'],
+      rules: {
+        'import/no-default-export': 'off',
+        'react/function-component-definition': 'off',
+      }
+    },
+  ],
+  {
+    next: true,
+    prettier: false,
     react: true,
+    sortKeys: true,
+    tailwind: true,
     typescript: true,
-    formatters: {
-      css: true,
-      html: true,
-      markdown: 'prettier',
-    },
-    ignores: [
-      './fixtures',
-      '/node_modules',
-      '/.github',
-      '/.vscode',
-    ],
-    rules: {
-      'curly': 'off',
-      'style/semi': 'off',
-      'no-console': 'warn',
-      'no-unused-vars': 'warn',
-      'style/jsx-indent': 'off',
-      'react/display-name': 'off',
-      'jsdoc/check-param-names': 'off',
-      'node/prefer-global/process': 'off',
-      'unused-imports/no-unused-vars': 'warn',
-      'jsdoc/require-property-description': 'off',
-      'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
-    },
-    stylistic: {
-      indent: 2,
-      quotes: 'single',
-    },
-  }),
-  customConfig,
-)
+    typescriptTypecheck: true,
+    storybook: true,
+    jest: true,
+    jestDom: true,
+    compat: false,
+    playwright: true,
+    testingLibrary: true,
+    lodash: true,
+    vitest: false,
+  },
+);

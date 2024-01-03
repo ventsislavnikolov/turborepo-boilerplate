@@ -20,8 +20,8 @@ export default {
     [
       'semantic-release-ado',
       {
-        varName: 'semanticVersion',
         setOnlyOnRelease: false,
+        varName: 'semanticVersion',
       },
     ],
   ],

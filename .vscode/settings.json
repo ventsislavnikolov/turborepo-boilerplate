@@ -1,13 +1,12 @@
 {
-  "editor.formatOnSave": true,
-  "prettier.enable": false,
-  "eslint.experimental.useFlatConfig": true,
-  // Auto fix
+  "css.format.enable": false,
+  "css.format.preserveNewLines": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
-  // Enable eslint for all supported languages
+  "editor.formatOnSave": true,
+  "eslint.experimental.useFlatConfig": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -21,6 +20,5 @@
     "yaml",
     "toml"
   ],
-  "css.format.enable": false,
-  "css.format.preserveNewLines": true
+  "prettier.enable": true
 }

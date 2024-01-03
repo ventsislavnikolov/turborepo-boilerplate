@@ -1,21 +1,17 @@
 {
   "name": "turborepo-boilerplate",
-  "type": "module",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@8.10.2",
+  "type": "module",
   "license": "MIT",
   "homepage": "https://github.com/ventsislavnikolov/turborepo-boilerplate",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ventsislavnikolov/turborepo-boilerplate.git"
-  },
   "bugs": {
     "url": "https://github.com/ventsislavnikolov/turborepo-boilerplate/issues"
   },
-  "engines": {
-    "node": ">=18.16.0",
-    "npm": ">=9.5.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ventsislavnikolov/turborepo-boilerplate.git"
   },
   "scripts": {
     "dev": "turbo run dev",
@@ -27,20 +23,7 @@
     "commitlint": "npx --no -- commitlint --edit",
     "clean": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist && rm -rf apps/*/node_modules && rm -rf apps/*/dist && rm -rf pnpm-lock.yaml"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
-    "@antfu/eslint-config": "2.6.1",
     "@commitlint/cli": "18.4.3",
     "@commitlint/config-conventional": "18.4.3",
     "@commitlint/types": "18.4.3",
@@ -51,6 +34,7 @@
     "@semantic-release/npm": "11.0.2",
     "@semantic-release/release-notes-generator": "12.1.0",
     "@turbo/gen": "1.11.2",
+    "@ventsislavnikolov/eslint-config": "1.0.0",
     "eslint-plugin-format": "0.1.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-react": "7.33.2",
@@ -64,5 +48,21 @@
     "semantic-release": "22.0.12",
     "semantic-release-ado": "1.4.0",
     "turbo": "1.11.2"
+  },
+  "engines": {
+    "node": ">=18.16.0",
+    "npm": ">=9.5.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
