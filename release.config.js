@@ -1,6 +1,6 @@
 export default {
   branches: [
-    'master',
+    'main',
   ],
   plugins: [
     '@semantic-release/commit-analyzer',
