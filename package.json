@@ -15,7 +15,6 @@
   },
   "scripts": {
     "dev": "turbo run dev",
-    "prepare": "husky install",
     "build": "turbo run build",
     "lint-staged": "npx lint-staged",
     "commitlint": "npx --no -- commitlint --edit",
