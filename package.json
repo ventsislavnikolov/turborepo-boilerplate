@@ -18,9 +18,10 @@
     "prepare": "husky install",
     "build": "turbo run build",
     "lint-staged": "npx lint-staged",
-    "lint": "eslint ./apps ./packages",
-    "lint:fix": "eslint ./apps ./packages --fix",
     "commitlint": "npx --no -- commitlint --edit",
+    "prettier": "prettier --check \"./apps/**/*.{jsx,js}\"",
+    "prettier:write": "prettier --write \"./apps/**/*.{jsx,js}\"",
+    "lint": "npx oxlint --import-plugin --jest-plugin --jsx-a11y-plugin --nextjs-plugin -D all -c ./eslintrc.json --deny-warnings",
     "clean": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist && rm -rf apps/*/node_modules && rm -rf apps/*/dist && rm -rf pnpm-lock.yaml"
   },
   "devDependencies": {
@@ -34,35 +35,19 @@
     "@semantic-release/npm": "11.0.2",
     "@semantic-release/release-notes-generator": "12.1.0",
     "@turbo/gen": "1.11.3",
-    "@ventsislavnikolov/eslint-config": "1.0.3",
-    "eslint-plugin-format": "0.1.0",
-    "eslint-plugin-jsx-a11y": "6.8.0",
-    "eslint-plugin-react": "7.33.2",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-react-refresh": "0.4.5",
-    "eslint-plugin-tailwindcss": "3.14.0",
     "husky": "8.0.3",
     "lint-staged": "15.2.0",
-    "prettier": "3.2.2",
+    "oxlint": "0.2.2",
+    "prettier": "3.2.4",
     "prettier-plugin-tailwindcss": "0.5.11",
-    "semantic-release": "22.0.12",
+    "semantic-release": "23.0.0",
     "semantic-release-ado": "1.4.0",
     "turbo": "1.11.3"
   },
-  "engines": {
-    "node": ">=18.16.0",
-    "npm": ">=9.5.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.3%",
+    "last 2 versions",
+    "not dead",
+    "not op_mini all"
+  ]
 }

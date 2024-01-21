@@ -1,9 +1,10 @@
 {
-  "extends": "typescript-config-custom/nextjs.json",
-  "compilerOptions": {
-    "plugins": [{"name": "next"}],
-    "baseUrl": "."
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+	"extends": "typescript-config-custom/nextjs.json",
+	"compilerOptions": {
+		"paths": {
+			"@/*": ["./src/*"],
+			"@ui/components/*": ["../../packages/ui/components/*"],
+		},
+	},
+	"include": ["**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
 }
