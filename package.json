@@ -33,7 +33,7 @@
     "@semantic-release/github": "9.2.6",
     "@semantic-release/npm": "11.0.2",
     "@semantic-release/release-notes-generator": "12.1.0",
-    "@turbo/gen": "1.11.3",
+    "@turbo/gen": "1.12.2",
     "husky": "8.0.3",
     "lint-staged": "15.2.0",
     "oxlint": "0.2.2",
