@@ -6,7 +6,9 @@
 		"dev": "next dev",
 		"lint": "next lint",
 		"build": "next build",
-		"start": "next start"
+		"start": "next start",
+		"envpull": "npx dotenv-vault@latest pull",
+		"envpush": "npx dotenv-vault@latest push"
 	},
 	"dependencies": {
 		"@sentry/nextjs": "7.104.0",
