@@ -1,12 +1,14 @@
 {
-    "rules": {
-        "no-undef": "off",
-        "import/named": "off",
-        "import/default": "off",
-        "unicorn/filename-case": "off",
-        "react/react-in-jsx-scope": "off",
-        "unicorn/no-zero-fractions": "off",
-        "@typescript-eslint/no-var-requires": "off",
-        "unicorn/no-await-expression-member": "off"
-    }
+	"rules": {
+		"no-undef": "off",
+		"import/named": "off",
+		"import/default": "off",
+		"import/no-unresolved": "off",
+		"unicorn/filename-case": "off",
+		"jsx-a11y/anchor-is-valid": "off",
+		"react/react-in-jsx-scope": "off",
+		"unicorn/no-zero-fractions": "off",
+		"@typescript-eslint/no-var-requires": "off",
+		"unicorn/no-await-expression-member": "off"
+	}
 }
